@@ -36,7 +36,8 @@ namespace CreatingTextFile
                 "Contact No: " + txtContactNo.Text,
             };
 
-            string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string relativePath = @"..\..\MyProjects";
+            string docPath = Path.GetFullPath(relativePath);
             string fileName = txtStudentNo.Text + ".txt";
 
             using (StreamWriter writer = new StreamWriter(Path.Combine(docPath, fileName)))

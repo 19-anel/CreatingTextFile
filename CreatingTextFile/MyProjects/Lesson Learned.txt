@@ -1,0 +1,1 @@
+I learn the correlation of FileStream to StreamWriter and StreamReader. I also learned about the different parameters and methods use when using Streams. 
